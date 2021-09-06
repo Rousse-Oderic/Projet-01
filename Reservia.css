@@ -1,0 +1,174 @@
+/* Eléments principaux de la page */
+
+body
+{
+    background-color: white;
+    font-family: Raleway, sans-serif;
+    color: black;
+}
+
+#bloc_page
+{
+    margin: auto;
+    max-width: 900px;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#logo img
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 120px;
+    height: 50px;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style: none;
+    display: flex;
+}
+
+nav li
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+
+}
+
+nav a
+{
+    width: 140px;
+    height: 99px;
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    color: gray;
+    text-decoration: none;
+}
+
+
+nav a:hover
+{
+    color: blue;
+    border-top: 2px solid blue;
+}
+
+#lien
+{
+   color: blue;
+   border: none;
+   text-decoration: none;
+}
+
+/* Recherche */
+h1
+{
+    font-size: 1am;
+}
+
+#recherche_box
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    border: 3px solid black;
+    border-collapse: collapse;
+    border-radius: 10px / 10px;
+}
+
+.R0{
+    background: gray;
+    flex: 1;
+}
+
+.R1
+{
+        flex: 2;
+}
+
+.R2
+{
+    flex: 3;
+}
+/* filtre */
+
+#filtre
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+}
+
+h2
+{
+    font-size: 100%;
+}
+
+.h
+{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.j
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    border-collapse: separate;
+}
+
+.Money
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+.Child
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.Heart
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.Dog
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#info
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
