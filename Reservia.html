@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
         <!-- lien vers les icon du site fontawesome.com -->
         <script src="https://kit.fontawesome.com/a2f4c0570b.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="Reservia.css" />
+        <link rel="stylesheet" href="style.css" />
         <title>Reservia</title>
 
     </head>
@@ -14,17 +14,10 @@
     <body>
         <div id="bloc_page">
             <header>
-                <div id="logo">
-                    <img src="-01-images/logo/Reservia@3x.png" alt="Logo Reservia" />
-                </div>
-
-                <nav>
-                    <ul>
-                        <li ><a href="#" >Hébergements</a></li>
-                        <li ><a href="#" >Activités</a></li>
-                        <li ><a href="#" id="lien">S'inscrire</a></li>
-                    </ul>
-                </nav>
+                <div class="logo"><img src="-01-images/logo/Reservia@3x.png" alt="Logo Reservia" class="Reservia_logo"/></div>
+                <div class="header_lien"><a href="#Hébergements" class="liens">Hébergements</a> </div>
+                <div class="header_lien"><a href="#Activités" class="liens">Activités</a></div>
+                <div class="header_lien"><a href="#" class="liens" id="lien">S'inscrire</a></div>
             </header>
 
             <div id="section_recherche">
@@ -38,8 +31,11 @@
                     <div >
                         <input type="search" name="rechercher" placeholder="Marseille, France">
                     </div>
-                    <div>
-                        <button>Rechercher</button>
+                    <div >
+                        <button class="button_1" >Rechercher</button>
+                    </div>
+                    <div >
+                        <button class="button_2"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
 
@@ -71,8 +67,8 @@
 
             </div>
             <section>
-                <div class="box_hebergements_marseille">
-                    <h1 class="title_marseille">Hébergements à Marseille</h1>
+                <div class="section_1">
+                    <h1 class="title_marseille" id="Hébergements">Hébergements à Marseille</h1>
                     <div class="box_hebergements">
                         <div class="box_hebergement_photos">
                             <img src="-01-images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image_marseille_hebergement" class="hebergement_photos">
@@ -149,12 +145,15 @@
                     </div>
                     <p class="p_marseille">Afficher plus</p>
                 </div>
-                <div class="box_les_plus_populaires">
-                    <h1 class="titre_populaires">Les plus populaires</h1>
+                <div class="section_2">
+                    <div class="head_box_populaires">
+                        <h1 class="titre_populaires">Les plus populaires</h1>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                     <div class="box_les_plus_populaires_photos">
                         <img src="-01-images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="populaires_hebergement_marseille" class="image_populaire_hebergement">
                         <div class="text_box_populaires">
-                            <h2 class="titre_populaire">Hotel Le soleil du </br> matin</h2>
+                            <h2 class="titre_populaire">Hotel Le soleil du <br> matin</h2>
                             <p class="p_populaies">Nuit àpartir de 128</p>
                             <div class="stars_populaire">
                                 <i class="fas fa-star" style="color:#0065FC"></i>
@@ -168,7 +167,7 @@
                     <div class="box_les_plus_populaires_photos">
                         <img src="-01-images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="populaires_hebergement_marseille" class="image_populaire_hebergement">
                         <div class="text_box_populaires">
-                            <h2 class="titre_populaire">Au coeur de l'eau </br> Chambres d'hotes</h2>
+                            <h2 class="titre_populaire">Au coeur de l'eau <br> Chambres d'hotes</h2>
                             <p class="p_populaies">Nuit àpartir de 71</p>
                             <div class="stars_populaire">
                                 <i class="fas fa-star" style="color:#0065FC"></i>
@@ -182,7 +181,7 @@
                     <div class="box_les_plus_populaires_photos">
                         <img src="-01-images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="populaires_hebergement_marseille" class="image_populaire_hebergement">
                         <div class="text_box_populaires">
-                            <h2 class="titre_populaire">Hotel Tout bleu et </br> blanc</h2>
+                            <h2 class="titre_populaire">Hotel Tout bleu et <br> blanc</h2>
                             <p class="p_populaies">Nuit àpartir de 68</p>
                             <div class="stars_populaire">
                                 <i class="fas fa-star" style="color:#0065FC"></i>
@@ -194,9 +193,73 @@
                         </div>
                     </div>
                 </div>
+                <div class="section_3">
+                    <div class="Titre_activites">
+                        <h1 class="titre_activites" id="Activités">Activités à Marseille</h1>
+                    </div>
+                    <div class="box_activites">
+                        <div class="box_a1">
+                            <img src="-01-images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="image_marseille_activites" class="img_a1">
+                            <h1 class="Titre-activites_imag">Vieux Port</h1>
+                        </div>
+                        <div class="box_a2">
+                            <div class="box_a2_1">
+                                <img src="-01-images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="image_marseille_activites" class="img_a2">
+                                <h1 class="Titre-activites_imag">Fort de Pomégues</h1>
+                            </div>
+                            <div class="box_a2_2">
+                                <img src="-01-images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="image_marseille_activites" class="img_a2">
+                                <h1 class="Titre-activites_imag">Iles du Frioul</h1>
+                            </div>
+                        </div>
+                        <div class="box_a3">
+                            <img src="-01-images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="image_marseille_activites" class="img_a1">
+                            <h1 class="Titre-activites_imag">Parc National des Calanques</h1>
+                        </div>
+                        <div class="box_a2">
+                            <div class="box_a2_1">
+                                <img src="-01-images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="image_marseille_activites" class="img_a2">
+                                <h1 class="Titre-activites_imag">Notre-Dame-de-la-Garde</h1>
+                            </div>
+                            <div class="box_a2_2">
+                                <img src="-01-images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="image_marseille_activites" class="img_a2">
+                                <h1 class="Titre-activites_imag">Parc Longchamp</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
+        </div>
+        <div class="bloc_page_2">
             <footer>
-                
+                <div class="F-1">
+                    <h1 class="T-F">A propos</h1>
+                    <div>
+                        <ul>
+                            <li><a href="#">Fonctionnement du site</a></li>
+                            <li><a href="#">Conditions générales de vente</a></li>
+                            <li><a href="#">Données et confidentialité</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="F-2">
+                    <h1 class="T-F">Nos hébergements</h1>
+                    <div>
+                        <ul>
+                            <li><a href="#">Charte qualité</a></li>
+                            <li><a href="#">Soumettre votre hotel</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="F-3">
+                    <h1 class="T-F">Assistance</h1>
+                    <div>
+                        <ul>
+                            <li><a href="#">Centre d'aide</a></li>
+                            <li><a href="#">Nous contacter</a></li>
+                        </ul>
+                    </div>
+                </div>
             </footer>
         </div>
     </body>
